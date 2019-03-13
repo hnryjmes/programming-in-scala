@@ -16,3 +16,83 @@ Growing new types
 
 "Scala is much more like a bazaar than a cathedral, in the sense that it is designed to be extended and adapted by the people programming in it."
 
+"Instead, Scala allows users to grow and adapt the language in the directions they need by defining easy-to-use libraries that feel like native language support."
+
+Growing new control constructs
+
+"Actors are concurrency abstractions that can be implemented on top of threads."
+
+"An actor can perform two basic operations, message send and receive."
+
+"Even though the receive block may look and act very much like a built-in control construct, it is in fact a method defined in Akka's actors library."
+
+"All in all, the actor model has turned out to be a very pleasant means for expressing concurrent and distributed computations."
+
+#### 1.2 What makes Scala scalable?
+
+"Scala goes further than all other well-known languages in fusing object-oriented and functional programming into a uniform language design."
+
+"In fact the actor concept shown previously could not have been implemented without this unification of functions and objects."
+
+Scala is object-oriented
+
+"The great idea of object-oriented programming is to make these containers fully general, so that they can contain operations as well as data, and that they are themselves values that can be stored in other containers, or passed as parameters to operations."
+
+"Traits are like interfaces in Java, but they can also have method implementations and even fields."
+
+Scala is functional
+
+"You can pass functions as arguments to other functions, return them as results from functions, or store them in variables."
+
+"Functions that are first-class values provide a convenient means for abstracting over operations and creating new control structures."
+
+"Immutable data structures are one of the cornerstones of functional programming."
+
+"Functional languages encourage immutable data structures and referentially transparent methods."
+
+#### 1.3 Why Scala?
+
+Scala is compatible
+
+"In fact, almost all Scala code makes heavy use of Java libraries, often without programmers being aware of this fact."
+
+Scala is concise
+
+"A more conservative estimate would be that a typical Scala program should have about half the number of lines of the same program written in Java."
+
+Scala is high-level
+
+"Scala helps you manage complexity by letting you raise the level of abstraction in the interfaces you design and use."
+
+Scala is statically typed
+
+"Starting from a system of nested class types much like Java's, it allows you to parameterize types with generics, to combine types using intersections, and to hide details of types using abstract types."
+
+"These give a strong foundation for building and composing your own types, so that you can design interfaces that are at the same time safe and flexible to use."
+
+Verifiable properties
+
+"Although a static type system certainly cannot replace unit testing, it can reduce the number of unit tests needed by taking care of some properties that would otherwise need to be tested."
+
+Safe refactorings
+
+"A static type system provides a safety net that lets you make changes to a codebase with a high degree of confidence."
+
+Documentation
+
+"Static types are program documentation that is checked by the compiler for correctness."
+
+"In fact, it's not uncommon for user code to have no explicit types at all."
+
+#### 1.4 Scala's roots
+
+"Scala's innovations come primarily from how its constructs are put together."
+
+"For instance, its abstract types provide a more object-oriented alternative to generic types, its traits allow for flexible component assembly, and its extractors provide a representation-independent way to do pattern matching."
+
+#### 1.5 Conclusion
+
+"If you're coming to Scala from Java, the most challenging aspects of learning Scala may involve Scala's type system (which is richer than Java's) and its support for functional programming."
+
+### 2 First Steps in Scala
+
