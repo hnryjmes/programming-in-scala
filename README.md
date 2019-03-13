@@ -96,3 +96,42 @@ Documentation
 
 ### 2 First Steps in Scala
 
+Step 1. Learn to use the Scala interpreter
+
+"The easiest way to get started with Scala is by using the Scala interpreter, an interactive “shell” for writing Scala expressions and programs."
+
+Step 2. Define some variables
+
+"Scala has two kinds of variables, vals and vars."
+
+"Once initialized, a val can never be reassigned."
+
+"A var can be reassigned throughout its lifetime."
+
+"When the Scala interpreter (or compiler) can infer types, it is often best to let it do so rather than fill the code with unnecessary, explicit type annotations."
+
+Step 3. Define some functions
+
+"Function definitions start with def."
+
+"In Java, the type of the value returned from a method is its return type."
+
+"In Scala, that same concept is called result type."
+
+"Scala's Unit type is similar to Java's void type; in fact, every void-returning method in Java is mapped to a Unit-returning method in Scala."
+
+Step 4. Write some Scala scripts
+
+Step 5. Loop with while; decide with if
+
+Step 6. Iterate with foreach and for
+
+"Scala enables you to program imperatively, but as you get to know Scala better, you'll likely often find yourself programming in a more functional style."
+
+"If a function literal consists of one statement that takes a single argument, you need not explicitly name and specify the argument."
+
+Conclusion
+
+### 3 Next Steps in Scala
+
+"When you complete this chapter, you should have enough knowledge to enable you to start writing useful scripts in Scala."
