@@ -165,3 +165,27 @@ Step 11. Learn to recognize the functional style
 Step 12. Read lines from a file
 
 ### 4 Classes and Objects
+
+#### 4.1 Classes, field, and methods
+
+"Fields are also known as instance variables, because every instance gets its own set of the variables."
+
+#### 4.2 Semicolon inference
+
+#### 4.3 Singleton objects
+
+"As mentioned in Chapter 1, one way in which Scala is more object-oriented than Java is that classes in Scala cannot have static members."
+
+"Instead, Scala has singleton objects."
+
+"If you are a Java programmer, one way to think of singleton objects is as the home for any static methods you might have written in Java."
+
+"One difference between classes and singleton objects is that singleton objects cannot take parameters, whereas classes can."
+
+#### 4.4 A Scala application
+
+#### 4.5 The App trait
+
+#### 4.6 Conclusion
+
+### 5 Basic Types and Operations
