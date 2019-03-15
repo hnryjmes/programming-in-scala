@@ -135,3 +135,33 @@ Conclusion
 ### 3 Next Steps in Scala
 
 "When you complete this chapter, you should have enough knowledge to enable you to start writing useful scripts in Scala."
+
+Step 7. Parameterize arrays with types
+
+"You parameterize an instance with values by passing objects to a constructor in parentheses."
+
+"Scala doesn't technically have operator overloading, because it doesn't actually have operators in the traditional sense."
+
+"Arrays are simply instances of classes like any other class in Scala."
+
+"Scala achieves a conceptual simplicity by treating everything, from arrays to expressions, as objects with methods."
+
+Step 8. Use lists
+
+"One of the big ideas of the functional style of programming is that methods should not have side effects."
+
+"Applying this functional philosophy to the world of objects means making objects immutable."
+
+"Cons prepends a new element to the beginning of an existing list and returns the resulting list."
+
+Step 9. Use tuples
+
+Step 10. Use sets and maps
+
+Step 11. Learn to recognize the functional style
+
+"If the code contains no vars at all - i.e., it contains only vals - it is probably in a functional style."
+
+Step 12. Read lines from a file
+
+### 4 Classes and Objects
