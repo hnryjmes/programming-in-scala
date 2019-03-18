@@ -189,3 +189,70 @@ Step 12. Read lines from a file
 #### 4.6 Conclusion
 
 ### 5 Basic Types and Operations
+
+"If you're familiar with Java, you'll be glad to find that Java's basic types and operators have the same meaning in Scala."
+
+#### 5.1 Some basic types
+
+"Collectively, types Byte, Short, Int, Long, and Char are called integral types."
+
+"The integral types plus Float and Double are called numeric types."
+
+#### 5.2 Literals
+
+Integral literals
+
+"If an integer literal ends in an L or l, it is a Long; otherwise it is an Int."
+
+Floating point literals
+
+Character literals
+
+"In addition to providing an explicit character between the single quotes, you can identify a character using its Unicode code point."
+
+String literals
+
+"You start and end a raw string with three double quotation marks in a row (""")."
+
+Symbol literals
+
+Boolean literals
+
+#### 5.3 String interpolation
+
+"Because the letter s immediately precedes the open quote, Scala will use the s string interpolator to process the literal."
+
+#### 5.4 Operators are methods
+
+"Operator notation is not limited to methods like + that look like operators in other languages." 
+
+"You can use any method in operator notation."
+
+#### 5.5 Arithmetic operations
+
+#### 5.6 Relational and logical operations
+
+#### 5.7 Bitwise operations
+
+#### 5.8 Object equality
+
+"In Java, you can use == to compare both primitive and reference types."
+
+"On primitive types, Java's == compares value equality, as in Scala."
+
+"On reference types, however, Java's == compares reference equality, which means the two variables point to the same object on the JVM's heap."
+
+"Scala provides a facility for comparing reference equality, as well, under the name eq."
+
+#### 5.9 Operator precedence and associativity
+
+"No matter what associativity an operator has, however, its operands are always evaluated left to right."
+
+#### 5.10 Rich wrappers
+
+"All you need to know for now is that for each basic type described in this chapter, there is also a “rich wrapper” that provides several additional methods."
+
+#### 5.11 Conclusion
+
+### 6 Functional Objects
+
