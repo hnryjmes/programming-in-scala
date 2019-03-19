@@ -256,3 +256,65 @@ Boolean literals
 
 ### 6 Functional Objects
 
+"In this chapter, the emphasis is on classes that define functional objects, or objects that do not have any mutable state."
+
+#### 6.1 A specification for class Rational
+
+"Compared to floating-point numbers, rational numbers have the advantage that fractions are represented exactly, without rounding or approximation."
+
+#### 6.2 Constructing a Rational
+
+"Immutable objects offer several advantages over mutable objects, and one potential disadvantage."
+
+"First, immutable objects are often easier to reason about than mutable ones, because they do not have complex state spaces that change over time."
+
+"Second, you can pass immutable objects around quite freely, whereas you may need to make defensive copies of mutable objects before passing them to other code."
+
+"Third, there is no way for two threads concurrently accessing an immutable to corrupt its state once it has been properly constructed, because no thread can change the state of an immutable."
+
+"Fourth, immutable objects make safe hash table keys."
+
+"The main disadvantage of immutable objects is that they sometimes require that a large object graph be copied, whereas an update could be done in its place."
+
+#### 6.3 Reimplementing the toString method
+
+#### 6.4 Checking preconditions
+
+"One of the benefits of object-oriented programming is that it allows you to encapsulate data inside objects so that you can ensure the data is valid throughout its lifetime."
+
+#### 6.5 Adding fields
+
+#### 6.6 Self references
+
+#### 6.7 Auxiliary constructors
+
+"In Scala, constructors other than the primary constructor are called auxiliary constructors."
+
+"In Scala, every auxiliary constructor must invoke another constructor of the same class as its first action."
+
+"The invoked constructor is either the primary constructor (as in the Rational example), or another auxiliary constructor that comes textually before the calling constructor."
+
+"The primary constructor is thus the single point of entry of a class."
+
+#### 6.8 Private fields and methods
+
+#### 6.9 Defining operators
+
+#### 6.10 Identifiers in Scala
+
+"An alphanumeric identifier starts with a letter or underscore, which can be followed by further letters, digits, or underscores."
+
+"In Java, the convention is to give constants names that are all upper case, with underscores separating the words, such as MAX_VALUE or PI."
+
+"In Scala, the convention is merely that the first character should be upper case."
+
+#### 6.11 Method overloading
+
+#### 6.12 Implicit conversions
+
+#### 6.13 A word of caution
+
+#### 6.14 Conclusion
+
+### 7 Built-in Control Structures
+
