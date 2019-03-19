@@ -318,3 +318,60 @@ Boolean literals
 
 ### 7 Built-in Control Structures
 
+"The only control structures are if, while, for, try, match, and function calls."
+
+"This is the approach taken by functional languages, where programs are viewed as computing a value, thus the components of a program should also compute values."
+
+#### 7.1 If expressions
+
+"Look for opportunities to use vals."
+
+"They can make your code both easier to read and easier to refactor."
+
+#### 7.2 While loops
+
+"Scala includes the while loop nonetheless because sometimes an imperative solution can be more readable, especially to programmers with a predominantly imperative background."
+
+#### 7.3 For expressions
+
+Iteration through collections
+
+Filtering
+
+Nested iteration
+
+Mid-stream variable bindings
+
+Producing a new collection
+
+#### 7.4 Exception handling with try expressions
+
+Throwing exceptions
+
+"Technically, an exception throw as type Nothing."
+
+Catching exceptions
+
+The finally clause
+
+Yielding a value
+
+#### 7.5 Match expressions
+
+"The most significant difference from Java's switch, however, may be that match expressions result in a value."
+
+#### 7.6 Living without break and continue
+
+"Scala leaves out these commands because they do not mesh well with function literals, a feature described in the next chapter."
+
+"The simplest approach is to replace every continue by an if and every break by a boolean variable."
+
+#### 7.7 Variable scope
+
+"One difference between Java and Scala is that Scala allows you to define variables of the same name in different scopes."
+
+#### 7.8 Refactoring imperative-style code
+
+#### 7.9 Conclusion
+
+### 8 Functions and Closures
