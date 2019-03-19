@@ -450,3 +450,23 @@ Limits of tail recursion
 
 ### 9 Control Abstraction
 
+#### 9.1 Reducing code duplication
+
+"One benefit of higher-order functions is they enable you to create control abstractions that allow you to reduce code duplication."
+
+#### 9.2 Simplifying client code
+
+#### 9.3 Currying
+
+"A curried function is applied to multiple argument lists, instead of just one."
+
+#### 9.4 Writing new control structures
+
+#### 9.5 By-name parameters
+
+#### 9.6 Conclusion
+
+"You can use functions within your code to factor out common control patterns, and you can take advantage of higher-order functions in the Scala library to reuse control patterns that are common across all programmers' code."
+
+### 10 Composition and inheritance
+
