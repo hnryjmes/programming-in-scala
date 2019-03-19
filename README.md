@@ -375,3 +375,78 @@ Yielding a value
 #### 7.9 Conclusion
 
 ### 8 Functions and Closures
+
+"Besides methods, which are functions that are members of some object, there are also functions nested within functions, function literals, and function values."
+
+#### 8.1 Methods
+
+#### 8.2 Local functions
+
+"Just like local variables, such local functions are visible only in their enclosing block."
+
+#### 8.3 First-class functions
+
+"A function literal is compiled into a class that when instantiated at runtime is a function value."
+
+"Thus the distinction between function literals and values is that function literals exist in the source code, whereas function values exist as objects at runtime."
+
+"Function values are objects, so you can store them in variables if you like."
+
+"They are functions, too, so you can invoke them using the usual parentheses function-call notation."
+
+#### 8.4 Short forms of function literals
+
+#### 8.5 Placeholder syntax
+
+"You can think of the underscore as a “blank” in the expression that needs to be “filled in.”"
+
+"This blank will be filled in with an argument to the function each time the function is invoked."
+
+#### 8.6 Partially applied functions
+
+"For example, rather than writing println(_), you could write println _."
+
+"A partially applied function is an expression in which you don't supply all of the arguments needed by the function."
+
+"This apply method, defined in the class generated automatically by the Scala compiler from the expression sum _, simply forwards those three missing parameters to sum, and returns the result."
+
+#### 8.7 Closures
+
+"Scala's syntax for partially applied functions highlights a difference in the design trade-offs of Scala and classical functional languages, such as Haskell or ML."
+
+"In these languages, partially applied functions are considered the normal case."
+
+"The function value (the object) that's created at runtime from this function literal is called a closure."
+
+#### 8.8 Special function call forms
+
+Repeated parameters
+
+"Scala allows you to indicate that the last parameter to a function may be repeated."
+
+Named arguments
+
+Default parameter values
+
+#### 8.9 Tail recursion
+
+"Functions like approximate, which call themselves as their last action, are called tail recursive."
+
+"The Scala compiler detects tail recursion and replaces it with a jump back to the beginning of the function, after updating the function parameters with the new values."
+
+Tracing tail-recursive functions
+
+"A tail-recursive function will not build a new stack frame for each call; all calls will execute in a single frame.
+
+Limits of tail recursion
+
+"The use of tail recursion in Scala is fairly limited because the JVM instruction set makes implementing more advanced forms of tail recursion very difficult."
+
+#### 8.10 Conclusion
+
+"In addition to methods, Scala provides local functions, function literals, and function values."
+
+"In addition to normal function calls, Scala provides partially applied functions and functions with repeated parameters."
+
+### 9 Control Abstraction
+
