@@ -470,3 +470,53 @@ Limits of tail recursion
 
 ### 10 Composition and inheritance
 
+"Composition means one class holds a reference to another, using the referenced class to help it fulfill its mission."
+
+"Inheritance is the superclass/subclass relationship."
+
+#### 10.1 A two-dimensional layout library
+
+"Such composing operators are also often called combinators because they combine elements of some domain into new elements."
+
+#### 10.2 Abstract classes
+
+#### 10.3 Defining parameterless methods
+
+"The recommended convention is to use a parameterless method whenever there are no parameters and the method accesses mutable state only by reading fields of the containing object (in particular, it does not change mutable state)."
+
+#### 10.4 Extending classes
+
+#### 10.5 Overriding methods and fields
+
+#### 10.6 Defining parametric fields
+
+#### 10.7 Invoking superclass constructors
+
+#### 10.8 Using override modifiers
+
+"These “accidental overrides” are the most common manifestation of what is called the “fragile base class” problem."
+
+"The problem is that if you add new members to base classes (which we usually call superclasses) in a class hierarchy, you risk breaking client code."
+
+#### 10.9 Polymorphism and dynamic binding
+
+#### 10.10 Declaring final members
+
+#### 10.11 Using composition and inheritance
+
+#### 10.12 Implementing above, beside, and toString
+
+#### 10.13 Defining a factory object
+
+"An advantage of this approach is that object creation can be centralized and the details of how objects are represented with classes can be hidden."
+
+#### 10.14 Heighten and widen
+
+#### 10.15 Putting it all together
+
+#### 10.16 Conclusion
+
+"Among others, you encountered abstract classes, inheritance and subtyping, class hierarchies, parametric fields, and method overriding."
+
+### 11 Scala's Hierarchy
+
