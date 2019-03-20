@@ -580,3 +580,63 @@ Limits of tail recursion
 
 ### 13 Packages and Imports
 
+"One way to minimize coupling is to write in a modular style."
+
+#### 13.1 Putting code in packages
+
+#### 13.2 Concise access to related code
+
+#### 13.3 Imports
+
+"The first of these corresponds to Java's single type import and the second to Java's on-demand import."
+
+"For one, imports in Scala can appear anywhere, not just at the beginning of a compilation unit."
+
+#### 13.4 Implicit imports
+
+#### 13.5 Access modifiers
+
+Private members
+
+Protected members
+
+Public members
+
+Scope of members
+
+"Marking a member private[this] is a guarantee that it will not be seen from other objects of the same class."
+
+Visibility and companion objects
+
+#### 13.6 Package objects
+
+"Package objects are frequently used to hold package-wide type aliases and implicit conversions."
+
+#### 13.7 Conclusion
+
+### 14 Assertions and Tests
+
+#### 14.1 Assertions
+
+"The expression assert(condition) throws an AssertionError if condition does not hold."
+
+"The expression assert(condition, explanation) tests condition and, if it does not hold, throws an AssertionError that contains the given explanation."
+
+#### 14.2 Testing in Scala
+
+#### 14.3 Informative failure reports
+
+#### 14.4 Tests as specifications
+
+"In the behavior-driven development (BDD) testing style, the emphasis is on writing human-readable specifications of the expected behavior of code and accompanying tests that verify the code has the specified behavior."
+
+"One of the big ideas of BDD is that tests can be used to facilitate communication between the people who decide what a software system should do, the people who implement the software, and the people who determine whether the software is finished and working."
+
+#### 14.5 Property-based testing
+
+#### 14.6 Organizing and running tests
+
+#### 14.7 Conclusion
+
+### 15 Case Classes and Pattern Matching
+
