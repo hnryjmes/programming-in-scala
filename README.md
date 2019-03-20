@@ -540,3 +540,43 @@ Limits of tail recursion
 
 ### 12 Traits
 
+"A trait encapsulates method and field definitions, which can then be reused by mixing them into classes."
+
+"Unlike class inheritance, in which each class must inherit from just one superclass, a class can mix in any number of traits."
+
+#### 12.1 How traits work
+
+#### 12.2 Thin versus rich interfaces
+
+"A rich interface has many methods, which make it convenient for the caller."
+
+"A thin interface, on the other hand, has fewer methods, and thus is easier on the implementers."
+
+#### 12.3 Example: Rectangular objects
+
+#### 12.4 The Ordered trait
+
+#### 12.5 Traits as stackable modifications
+
+#### 12.6 Why not multiple inheritance?
+
+"When you instantiate a class with new, Scala takes the class, and all of its inherited classes and traits, and puts them in a single, linear order."
+
+#### 12.7 To trait or not to trait?
+
+"If the behavior will not be reused, then make it a concrete class."
+
+"If it might be reused in multiple, unrelated classes, make it a trait."
+
+"If you want to inherit from it in Java code, use an abstract class."
+
+"If you plan to distribute it in compiled form, and you expect outside groups to write classes inheriting from it, you might lean towards using an abstract class."
+
+"If you still do not know, after considering the above, then start by making it as a trait."
+
+#### 12.8 Conclusion
+
+"Traits do not merely support the idioms described in this chapter; they are a fundamental unit of code that is reusable through inheritance."
+
+### 13 Packages and Imports
+
