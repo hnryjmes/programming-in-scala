@@ -520,3 +520,23 @@ Limits of tail recursion
 
 ### 11 Scala's Hierarchy
 
+"In Scala, every class inherits from a common superclass named Any."
+
+"Because every class is a subclass of Any, the methods defined in Any are “universal” methods: they may be invoked on any object."
+
+"Scala also defines some interesting classes at the bottom of the hierarchy, Null and Nothing, which essentially act as common subclasses."
+
+#### 11.1 Scala's class hierarchy
+
+#### 11.2 How primitives are implemented
+
+"In fact, Scala stores integers in the same way as Java - as 32-bit words."
+
+#### 11.3 Bottom types
+
+#### 11.4 Defining your own value classes
+
+#### 11.5 Conclusion
+
+### 12 Traits
+
