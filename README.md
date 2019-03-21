@@ -640,3 +640,157 @@ Visibility and companion objects
 
 ### 15 Case Classes and Pattern Matching
 
+"This chapter introduces case classes and pattern matching, twin constructs that support you when writing regular, non-encapsulated data structures."
+
+"These two constructs are particularly helpful for tree-like recursive data."
+
+"If you have programmed in a functional language before, then you will probably recognize pattern matching."
+
+"But case classes will be new to you."
+
+"Case classes are Scala's way to allow pattern matching on objects without requiring a large amount of boilerplate."
+
+#### 15.1 A simple example
+
+"To keep things simple, we'll concentrate on arithmetic expressions consisting of variables, numbers, and unary and binary operations."
+
+Case classes
+
+"Using the modifier makes the Scala compiler add some syntactic conveniences to your class."
+
+"First, it adds a factory method with the name of the class."
+
+"The second syntactic convenience is that all arguments in the parameter list of a case class implicitly get a val prefix, so they are maintained as fields"
+
+"Third, the compiler adds “natural” implementations of methods toString, hashCode, and equals to your class."
+
+"They will print, hash, and compare a whole tree consisting of the class and (recursively) all its arguments."
+
+"Finally, the compiler adds a copy method to your class for making modified copies."
+
+Pattern matching
+
+"A pattern match includes a sequence of alternatives, each starting with the keyword case."
+
+"Each alternative includes a pattern and one or more expressions, which will be evaluated if the pattern matches."
+
+"An arrow symbol => separates the pattern from the expressions."
+
+"A match expression is evaluated by trying each of the patterns in the order they are written."
+
+match compared to switch
+
+"Match expressions can be seen as a generalization of Java-style switches."
+
+"A Java-style switch can be naturally expressed as a match expression, where each pattern is a constant and the last pattern may be a wildcard (which represents the default case of the switch)."
+
+"First, match is an expression in Scala (i.e., it always results in a value)."
+
+"Second, Scala's alternative expressions never “fall through” into the next case."
+
+"Third, if none of the patterns match, an expression named MatchError is thrown."
+
+"This means you always have to make sure that all cases are covered, even if it means adding a default case where there's nothing to do."
+
+#### 15.2 Kinds of patterns
+
+"Since the syntax of patterns is so transparent, the main thing to pay attention to is just what kinds of patterns are possible."
+
+Wildcard patterns
+
+"The wildcard pattern (_) matches any object whatsoever."
+
+Constant patterns
+
+"Any literal may be used as a constant."
+
+Variable patterns
+
+"But unlike a wildcard, Scala binds the variable to whatever the object is."
+
+"You can then use this variable to act on the object further."
+
+Constructor patterns
+
+"It consists of a name (BinOp) and then a number of patterns within parentheses: "+", e, and Number(0)."
+
+"Assuming the name designates a case class, such a pattern means to first check that the constructor parameters of the object match the extra patterns supplied."
+
+Sequence patterns
+
+"You can match against sequence types, like List or Array, just like you match against case classes."
+
+Tuple patterns
+
+Typed patterns
+
+Type erasure
+
+"Scala uses the erasure model of generics, just like Java does."
+
+"This means that no information about type arguments is maintained at runtime."
+
+"The only exception to the erasure rule is arrays, because they are handled specially in Java as well as Scala."
+
+Variable binding
+
+"This gives you a variable-binding pattern, which means the pattern is to perform the pattern match as normal, and if the pattern succeeds, set the variable to the matched object just as with a simple variable pattern."
+
+#### 15.3 Pattern guards
+
+"A pattern guard comes after a pattern and starts with an if."
+
+"If a pattern guard is present, the match succeeds only if the guard evaluates to true."
+
+#### 15.4 Pattern overlaps
+
+#### 15.5 Sealed classes
+
+"What do you do if there is no default?"
+
+"The alternative is to make the superclass of your case classes sealed."
+
+"If you write a hierarchy of classes intended to be pattern matched, you should consider sealing them."
+
+#### 15.6 The Option type
+
+"The Option type is used frequently in Scala programs."
+
+"Compare this to the dominant idiom in Java of using null to indicate no value."
+
+"If a variable is allowed to be null, then you must remember to check it for null every time you use it."
+
+"When you forget to check, you open the possibility that a NullPointerException may result at runtime."
+
+"This approach to optional values has several advantages over Java's."
+
+"But most importantly, that programming error described earlier of using a variable that may be null without first checking it for null becomes a type error in Scala."
+
+"If a variable is of type Option[String] and you try to use it as a String, your Scala program will not compile."
+
+#### 15.7 Patterns everywhere
+
+Patterns in variable definitions
+
+Case sequences as partial functions
+
+"A sequence of cases (i.e., alternatives) in curly braces can be used anywhere a function literal can be used."
+
+"Essentially, a case sequence is a function literal, only more general."
+
+"Instead of having a single entry point and list of parameters, a case sequence has multiple entry points, each with their own list of parameters."
+
+"In general, you should try to work with complete functions whenever possible, because using partial functions allows for runtime errors that the compiler cannot help you with."
+
+Patterns in for expressions
+
+#### 15.8 A larger example
+
+#### 15.9 Conclusion
+
+"In this chapter, you learned about Scala's case classes and pattern matching in detail."
+
+"By using them, you can take advantage of several concise idioms not normally available in object-oriented languages."
+
+### 16 Working with Lists
+
