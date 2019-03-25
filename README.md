@@ -794,3 +794,137 @@ Patterns in for expressions
 
 ### 16 Working with Lists
 
+#### 16.1 List literals
+
+"First, lists are immutable."
+
+"That is, elements of a list cannot be changed by assignment."
+
+"Second, lists have a recursive structure (i.e. a linked list), whereas arrays are flat."
+
+#### 16.2 The List type
+
+"Like arrays, lists are homogenous: the elements of a list all have the same type."
+
+#### 16.3 Constructing lists
+
+"All lists are built from two fundamental building blocks, Mil and :: (pronounced “cons”)."
+
+"Nil represents the empty list."
+
+"The infix operator, ::, expresses list extension at the front."
+
+"That is, x :: xs represents a list whose first element is x, followed by (the elements of) list xs."
+
+#### 16.4 Basic operations on lists
+
+"As an example of how lists can be processed, consider sorting the elements of a list of numbers into ascending order."
+
+"One simple way to do so is insertion sort, which works as follows: To sort a non-empty list x :: xs, sort the remainder xs and insert the first element x at the right position in the result."
+
+#### 16.5 List patterns
+
+"List patterns correspond one-by-one to list expressions."
+
+"Often, pattern matching over lists is clearer than decomposing them with methods, so pattern matching should be a part of your list processing toolbox."
+
+#### 16.6 First-order methods on class List
+
+"A method is first-order if it does not take any functions as arguments."
+
+"The result of xs ::: ys is a new list that contains all the elements of xs, followed by all the elements of ys."
+
+The Divide and Conquer principle
+
+"Many algorithms over lists first split an input list into simpler cases using a pattern match."
+
+"The most common pattern match over lists simply distinguishes an empty from a non-empty list."
+
+Taking the length of a list: length
+
+"On lists, unlike arrays, length is a relatively expensive operation."
+
+"That's why it's not a good idea to replace a test such as xs.isEmpty by xs.length == 0."
+
+Accessing the end of a list: init and last
+
+Reversing lists: reverse
+
+"If at some point in the computation an algorithm demands frequent accesses to the end of a list, it's sometimes better to reverse the list first and work with the result instead."
+
+Prefixes and suffixes: drop, take, and splitAt
+
+Element selection: apply and indices
+
+Flattening a list of lists: flatten
+
+Zipping lists: zip and unzip
+
+Displaying lists: toString and mkString
+
+Converting lists: iterator, toArray, copyToArray
+
+Example: Merge sort
+
+"The insertion sort presented earlier is concise to write, but it is not very efficient."
+
+"Its average complexity is proportional to the square of the length of the input list."
+
+"Merge sort works as follows: First, if the list has zero or one elements, it is already sorted, so the list can be returned unchanged."
+
+"Longer lists are split into two sub-lists, each containing about half the elements of the original list."
+
+#### 16.7 Higher-order methods on class List
+
+"Some examples are: transforming every element of a list in some way, verifying whether a property holds for all elements of a list, extracting from a list elements satisfying a certain criterion, or combining the elements of a list using some operator."
+
+Mapping over lists: map, flatMap and foreach
+
+"The operation xs map f takes as operands a list xs of type List[T] and a function f of type T => U."
+
+"It returns the list that results from applying the function f to each list element in xs."
+
+"The flatMap operator is similar to map, but it takes a function returning a list of elements as its right operand."
+
+"Unlike map and flatMap, however, foreach takes a procedure (a function with result type Unit) as right operand."
+
+"The result of the operation itself is again Unit; no list of results is assembled."
+
+Filtering lists: filter, partition, find, takeWhile, dropWhile, and span
+
+"The partition method is like filter but returns a pair of lists."
+
+"One list contains all elements for which the predicate is true, while the other contains all elements for which the predicate is false."
+
+Folding lists: /: and :\
+
+"A fold left operation “(z /: xs)(op)” involves three objects: a start value z, a list xs, and a binary operation op."
+
+"The result of the fold is op applied between successive elements of the list prefixed by z."
+
+"For associative operations, fold left and fold right are equivalent, but there might be a difference in efficiency."
+
+Example: List reversal using fold
+
+Sorting lists: sortWith
+
+#### 16.8 Methods of the List object
+
+Creating lists from their elements: List.apply
+
+Creating a range of numbers: List.range
+
+Creating uniform lists: List.fill
+
+Tabulating a function: List.tabulate
+
+Concatenating multiple lists: List.concat
+
+#### 16.9 Processing multiple lists together
+
+#### 16.10 Understanding Scala's type inference algorithm
+
+#### 16.11 Conclusion
+
+### 17 Working with Other Collections
+
