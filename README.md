@@ -974,3 +974,39 @@ Converting between mutable and immutable sets and maps
 
 ### 18 Mutable Objects
 
+"Such mutable objects often come up naturally when you want to model objects in the real world that change over time."
+
+#### 18.1 What makes an object mutable?
+
+#### 18.2 Reassignable variables and properties
+
+"In Scala, every var that is a non-private member of some object implicitly defines a getter and a setter method with it."
+
+#### 18.3 Case study: Discrete event simulation
+
+"This example is taken from the classic textbook Structure and Interpretation of Computer Programs by Abelson and Sussman." 
+
+"What's different here is that the implementation language is Scala instead of Scheme, and that the various aspects of the example are structures into four software layers: one for the simulation framework, another for the basic circuit simulation package, a third for a library of user-defined circuits, and the last layer for each simulated circuit itself."
+
+#### 18.4 A language for digital circuits
+
+#### 18.5 The Simulation API
+
+#### 18.6 Circuit Simulation
+
+The Wire class
+
+The inverter method
+
+The andGate and orGate methods
+
+Simulation output
+
+Running the simulator
+
+#### 18.7 Conclusion
+
+"Higher-order functions were used in the simulation framework to execute actions at specified points in simulated time."
+
+### 19 Type Parameterization
+
