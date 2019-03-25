@@ -928,3 +928,49 @@ Concatenating multiple lists: List.concat
 
 ### 17 Working with Other Collections
 
+#### 17.1 Sequences
+
+Lists
+
+"This combination of features might sound odd, but they hit a sweet spot that works well for many algorithms."
+
+"The fast addition and removal of initial elements means that pattern matching works well, as described in Chapter 15."
+
+Arrays
+
+List buffers
+
+Array buffers
+
+Strings (via StringOps)
+
+#### 17.2 Sets and maps
+
+Using sets
+
+"The key characteristic of sets is that they will ensure that at most one of each object, as determined by ==, will be contained in the set at any one time."
+
+Using maps
+
+"Maps let you associate a value with each element of a set."
+
+Default sets and maps
+
+Sorted sets and maps
+
+#### 17.3 Selecting mutable versus immutable collections
+
+"When in doubt, it is better to start with an immutable collection and change it later, if you need to, because immutable collections can be easier to reason about than mutable ones."
+
+#### 17.4 Initializing collections
+
+Converting to an array or list
+
+Converting between mutable and immutable sets and maps
+
+#### 17.5 Tuples
+
+#### 17.6 Conclusion
+
+### 18 Mutable Objects
+
