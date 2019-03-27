@@ -1046,3 +1046,55 @@ The fast track
 
 ### 20 Abstract Members
 
+"A member of a class or trait is abstract if the member does not have a complete definition in the class."
+
+"Abstract members are intended to be implemented in subclasses of the class in which they are declared."
+
+#### 20.1 A quick tour of abstract members
+
+#### 20.2 Type members
+
+#### 20.3 Abstract vals
+
+#### 20.4 Abstract vars
+
+#### 20.5 Initializing abstract vals
+
+Pre-initialized fields
+
+Lazy vals
+
+"This shows an important property of lazy vals: The textual order of their definitions does not matter because values get initialized on demand."
+
+"Scala is by no means the first language to have exploited the perfect match of lazy definitions and functional code."
+
+"The best known member of this class of languages is Haskell."
+
+#### 20.6 Abstract types
+
+#### 20.7 Path-dependent types
+
+#### 20.8 Refinement types
+
+#### 20.9 Enumerations
+
+#### 20.10 Case study: Currencies
+
+"One of the restrictions of Scala's treatment of abstract types is that you can neither create an instance of an abstract type nor have an abstract type as a supertype of another class."
+
+"However, you can work around this restriction using a factory method."
+
+"By preventing the addition of two values with different units (in this case, currencies), the type abstraction has done its job."
+
+#### 20.11 Conclusion 
+
+"Scala offers systematic and very general support for object-oriented abstraction."
+
+"This chapter has shown how to take advantage of abstract members."
+
+"They support a simple yet effective principle for systems structuring: when designing a class, make everything that is not yet known into an abstract member."
+
+"The type system will then drive the development of your model, just as you saw with the currency case study."
+
+### 21 Implicit Conversions and Parameters
+
