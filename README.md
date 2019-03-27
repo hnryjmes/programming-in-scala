@@ -1148,3 +1148,69 @@ A style rule for implicit parameters
 
 ### 22 Implementing Lists
 
+"Knowing the internal workings of the List class is useful for several reasons."
+
+"You gain a better idea of the relative efficiency of list operations, which will help you in writing fast and compact code using lists."
+
+"You also gain a toolbox of techniques that you can apply in the design  of your own libraries."
+
+#### 22.1 The List class in principle
+
+"All list operations can be defined in terms of three basic methods:"
+
+```
+def isEmpty: Boolean
+def head: T
+def tail: List[T]
+```
+
+"These three methods are all abstract in class List."
+
+The Nil object
+
+The :: class
+
+"Class ::, pronounced “cons” for “construct,” represents non-empty lists."
+
+Some more methods
+
+"All other List methods can be written using the basic three."
+
+List construction
+
+"The list construction methods :: and ::: are special."
+
+"Because they end in a colon, they are bound to their right operand."
+
+"For this reason, the :: method should take an element value and yield a new list."
+
+#### 22.2 The ListBuffer class
+
+"The typical access pattern for a list is recursive."
+
+"One shortcoming of this program pattern is that it is not tail recursive."
+
+"Note that the recursive call to incAll above occurs inside a :: operation."
+
+"Therefore each recursive call requires a new stack frame."
+
+"List buffers let you accumulate the elements of a list."
+
+#### 22.3 The List class in practice
+
+"Most use cases of list buffers add elements incrementally and then do one toList operation at the end."
+
+#### 22.4 Functional on the outside
+
+"You saw that lists are purely functional on the “outside” but have an imperative implementation using list buffers on the “inside.”"
+
+"This is a typical strategy in Scala programming - trying to combine purity with efficiency by carefully delimiting the effects of impure operations."
+
+"The design of Scala's List and ListBuffer is quite similar to what's done in Java's pair of classes String and StringBuffer."
+
+"For Scala's lists, you have a choice: You can either construct lists incrementally by adding elements to the beginning of a list using ::, or you use a list buffer for adding elements to the end."
+
+#### 22.5 Conclusion
+
+### 23 For Expressions Revisited
+
