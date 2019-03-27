@@ -1098,3 +1098,53 @@ Lazy vals
 
 ### 21 Implicit Conversions and Parameters
 
+"These can make existing libraries much more pleasant to deal with by letting you leave out tedious, obvious details that obscure the interesting parts of your code."
+
+#### 21.1 Implicit conversions
+
+#### 21.2 Rules for implicits
+
+"Implicit definitions are those that the compiler is allowed to insert into a program in order to fix any of its type errors."
+
+Marking rule: Only definitions marked implicit are available
+
+Scope rule: An inserted implicit conversion must be in scope as a single identifier, or be associated with the source or target type of the conversion.
+
+One-at-a-time rule: Only one implicit is inserted.
+
+Explicits-first rule: Whenever code type checks as it is written, no implicits are attempted.
+
+Naming an implicit conversion
+
+Where implicits are tried
+
+#### 21.3 Implicit conversion to an expected type
+
+"For instance, an Int can be converted without loss of precision to a Double, so an implicit conversion from Int to Double makes sense."
+
+#### 21.4 Converting the receiver
+
+Interoperating with new types
+
+Simulating new syntax
+
+Implicit classes
+
+#### 21.5 Implicit parameters
+
+A style rule for implicit parameters
+
+#### 21.6 Context bounds
+
+#### 21.7 When multiple conversions apply
+
+#### 21.8 Debugging implicits
+
+#### 21.9 Conclusion
+
+"As a word of warning, implicits can make code confusing if they are used too frequently."
+
+"Thus, before adding a new implicit conversion, first ask whether you can achieve a similar effect through other means, such as inheritance, mixin composition, or method overloading."
+
+### 22 Implementing Lists
+
