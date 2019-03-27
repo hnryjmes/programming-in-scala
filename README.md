@@ -1010,3 +1010,39 @@ Running the simulator
 
 ### 19 Type Parameterization
 
+"Type parameterization allows you to write generic classes and traits."
+
+"For example, sets are generic and take a type parameter: Set[T]."
+
+#### 19.1 Functional queues
+
+"Unlike a mutable queue, a functional queue does not change its contents when an element is appended."
+
+#### 19.2 Information hiding
+
+Private constructors and factory methods
+
+An alternative: private classes
+
+#### 19.3 Variance annotations
+
+Variance and arrays
+
+#### 19.4 Checking variance annotations
+
+The fast track
+
+#### 19.5 Lower bounds
+
+#### 19.6 Contravariance
+
+#### 19.7 Object private data
+
+#### 19.8 Upper bounds
+
+#### 19.9 Conclusion
+
+"In this chapter you saw several techniques for information hiding: private constructors, factory methods, type abstraction, and object private members."
+
+### 20 Abstract Members
+
