@@ -1214,3 +1214,239 @@ List construction
 
 ### 23 For Expressions Revisited
 
+#### 23.1 For expressions
+
+#### 23.2 The n-queens problem
+
+"A particularly suitable application area of for expressions are combinatorial puzzles."
+
+#### 23.3 Querying with for expressions
+
+#### 23.4 Translation of for expressions
+
+Translating for expressions with one generator
+
+Translating for expressions starting with a generator and a filter
+
+Translating for expressions starting with two generators
+
+Translating patterns in generators
+
+Translating definitions
+
+Translating for loops
+
+#### 23.5 Going the other way
+
+#### 23.6 Generalizing for
+
+"In functional programming, there's a general concept called a monad, which can explain a large number of types with computations, ranging from collections, to computations with state and I/O, backtracking computations, and transactions, to name a few."
+
+"Therefore, map, flatMap, and withFilter can be seen as an object-oriented version of the functional concept of monad."
+
+"Because for expressions are equivalent to applications of these three methods, they can be seen as syntax for monads."
+
+#### 23.7 Conclusion
+
+### 24 Collections in Depth
+
+Easy to use
+
+Concise
+
+Safe
+
+Fast
+
+Universal
+
+#### 24.1 Mutable and immutable collections
+
+#### 24.2 Collections consistency
+
+#### 24.3 Trait Traversable
+
+Addition
+
+Map operations
+
+Conversions
+
+Copying operations
+
+Size operations
+
+Element retrieval operations
+
+Subcollection retrieval operations
+
+Subdivision retrieval operations
+
+Subdivision operations
+
+Element tests
+
+Folds
+
+Specific folds
+
+String operations
+
+View operations
+
+#### 24.4 Trait Iterable
+
+Why have both Traversable and Iterable?
+
+Subcategories of Iterable
+
+#### 24.5 The sequence traits Seq, IndexedSeq, and LinearSeq
+
+Indexing and length operations
+
+Index search operations
+
+Addition operations
+
+Update operations
+
+Sorting operations
+
+Reversal operations
+
+Comparison operations
+
+Multiset operations
+
+Buffers
+
+#### 24.6 Sets
+
+"Sets are Iterables that contain no duplicate elements."
+
+Tests 
+
+Additions
+
+Removals
+
+Set operations
+
+#### 24.7 Maps
+
+"Maps are Iterables of pairs of keys and values (also named mappings or associations)."
+
+Lookups
+
+Additions and updates
+
+Removals
+
+Subcollection producers
+
+Transformations
+
+#### 24.8 Concrete immutable collection classes
+
+Lists
+
+Streams
+
+Vectors
+
+"Because vectors strike a good balance between fast random selections and fast random functional updates, they are currently the default implementation of immutable indexed sequences."
+
+Immutable stacks
+
+Immutable queues
+
+Ranges
+
+Hash tries
+
+Red-black trees
+
+Immutable bit sets
+
+List maps
+
+#### 24.9 Concrete mutable collection classes
+
+Array buffers
+
+List buffers
+
+String builders
+
+Linked lists
+
+Double linked lists
+
+Mutable lists
+
+Queues
+
+Array sequences
+
+Stacks
+
+Array stacks
+
+Hash tables
+
+Weak hash maps
+
+Concurrent Maps
+
+Mutable bit sets
+
+#### 24.10 Arrays
+
+#### 24.11 Strings
+
+#### 24.12 Performance characteristics
+
+#### 24.13 Equality
+
+#### 24.14 Views
+
+"Collections have quite a few methods that construct new collections."
+
+"Some examples are map, filter, and ++."
+
+"We call such methods transformers because they take at least one collection has their receiver object and produce another collection in their result."
+
+#### 24.15 Iterators
+
+Buffered iterators
+
+#### 24.16 Creating collections from scratch
+
+#### 24.17 Conversions between Java and Scala collections
+
+#### 24.18 Conclusion
+
+### 25 The Architecture of Scala Collections
+
+#### 25.1 Builders
+
+"Almost all collection operations are implemented in terms of traversals and builders."
+
+"Traversals are handled by Traversable's foreach method, and building new collections is handled by instances of class Builder."
+
+#### 25.2 Factoring out common operations
+
+The fast track
+
+#### 25.3 Integrating new collections
+
+Integrating sequences
+
+Integrating new sets and maps
+
+Summary
+
+#### 25.4 Conclusion
+
+### 26 Extractors
+
