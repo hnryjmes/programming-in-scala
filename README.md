@@ -1450,3 +1450,61 @@ Summary
 
 ### 26 Extractors
 
+#### 26.1 An example: extracting email addresses
+
+"This is where Scala's extractors come in: they let you define new patterns for pre-existing types, where the pattern need not follow the internal representation of the type."
+
+#### 26.2 Extractors
+
+"An extractor in Scala is an object that has a method called unapply as one of its members."
+
+"The purpose of that unapply method is to match a value and take it apart."
+
+"Often, the extractor object also defines a dual method apply for building values, but this is not required."
+
+"The unapply method is what turns EMail into an extractor."
+
+"In a sense, it reverses the construction process of apply."
+
+"Where apply takes two strings and forms an email address string out of them, unapply takes an email address and returns potentially two strings: the user and the domain of the address."
+
+"In object EMail, the apply method is called an injection, because it takes some arguments and yields an element of a given set (in our case: the set of strings that are email address)."
+
+"The unapply method is called an extraction, because it takes a element of the same set and extracts some of its parts (in our case: the user and domain substrings)."
+
+"Injections and extractions are often grouped together in one object, because then you can use the object's name for both a constructor and a pattern, which simulates the convention for pattern matching with case classes."
+
+#### 26.3 Patterns with zero or one variables
+
+#### 26.4 Variable argument extractors
+
+#### 26.5 Extractors and sequence patterns
+
+#### 26.6 Extractors versus case classes
+
+"Even though they are very useful, case classes have one shortcoming: they expose the concrete representation of data."
+
+"This means that the name of the class in a constructor pattern corresponds to the concrete representation type of the selector object."
+
+"Extractors break this link between data representations and patterns."
+
+"In open systems of large size, representation independence is very important because it allows you to change an implementation type used in a set of components without affecting clients of these components."
+
+#### 26.7 Regular expressions
+
+Forming regular expressions
+
+Searching for regular expressions
+
+Extracting with regular expressions
+
+#### 26.8 Conclusion
+
+"Extractors let you define your own kinds of patterns, which need not correspond to the type of the expressions you select on."
+
+"This gives you more flexibility in the kinds of patterns you can use for matching."
+
+"This lets you do pattern matching while maintaining representation independence, a property which is very useful in large software systems."
+
+### 27 Annotations
+
