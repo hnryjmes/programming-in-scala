@@ -1508,3 +1508,31 @@ Extracting with regular expressions
 
 ### 27 Annotations
 
+"This chapter shows how to use annotations in Scala."
+
+"It shows their general syntax and how to use several standard annotations."
+
+#### 27.1 Why have annotations?
+
+#### 27.2 Syntax of annotations
+
+#### 27.3 Standard annotations
+
+Deprecation
+
+Volatile fields
+
+Binary serialization
+
+Automatic get and set methods
+
+Tailrec
+
+Unchecked
+
+Native methods
+
+#### 27.4 Conclusion
+
+### 28 Working with XML
+
