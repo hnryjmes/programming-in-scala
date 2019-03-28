@@ -1536,3 +1536,31 @@ Native methods
 
 ### 28 Working with XML
 
+#### 28.1 Semi-structured data
+
+"XML is a form of semi-structured data."
+
+#### 28.2 XML overview
+
+#### 28.3 XML literals
+
+#### 28.4 Serialization
+
+#### 28.5 Taking XML apart
+
+Extracting text.
+
+Extracting sub-elements.
+
+Extracting attributes.
+
+#### 28.6 Deserialization
+
+#### 28.7 Loading and saving
+
+#### 28.8 Pattern matching on XML
+
+#### 28.9 Conclusion
+
+### 29 Modular Programming Using Objects
+
