@@ -1708,3 +1708,83 @@ Other methods added in 2.12: flatten, zipWith, and transformWith
 
 ### 33 Combinator Parsing
 
+#### 33.1 Example: Arithmetic expressions
+
+#### 33.2 Running your parser
+
+#### 33.3 Basic regular expression parsers
+
+#### 33.4 Another example: JSON
+
+#### 33.5 Parser output
+
+Symbolic versus alphanumeric names
+
+#### 33.6 Implementing combinator parsers
+
+Parser input
+
+Parser results
+
+The Parser class
+
+Aliasing this
+
+Single-token parsers
+
+Sequential composition
+
+Alternative composition
+
+Dealing with recursion
+
+Result conversion
+
+Parsers that don't read any input
+
+Option and repetition
+
+#### 33.7 String literals and regular expressions
+
+#### 33.8 Lexing and parsing
+
+#### 33.9 Error reporting
+
+#### 33.10 Backtracking versus LL(1)
+
+#### 33.11 Conclusion
+
+### 34 GUI Programming
+
+#### 34.1 A first Swing application
+
+#### 34.2 Panels and layouts
+
+#### 34.3 Handling events
+
+#### 34.4 Example: Celsius/Fahrenheit converter
+
+#### 34.5 Conclusion
+
+### 35 The SCells Spreadsheet
+
+#### 35.1 The visual framework
+
+#### 35.2 Disconnecting data entry and display
+
+#### 35.3 Formulas
+
+#### 35.4 Parsing formulas
+
+#### 35.5 Evaluation
+
+#### 35.6 Operation libraries
+
+#### 35.7 Change propagation
+
+#### 35.8 Conclusion
+
+"The spreadsheet developed in this chapter is fully functional, even though at some points it adopts the simplest solution to implement rather than the most convenient one for the user."
+
+"That way, it could be written in just under 200 lines of code."
+
