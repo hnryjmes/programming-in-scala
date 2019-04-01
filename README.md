@@ -1564,3 +1564,147 @@ Extracting attributes.
 
 ### 29 Modular Programming Using Objects
 
+"In short, packages and access modifiers enable you to organize a large program using packages as modules, where a module is a “smaller program piece” with a well defined interface and a hidden implementation."
+
+#### 29.1 The problem
+
+"As a program grows in size, it becomes increasingly important to organize it in a modular way."
+
+#### 29.2 A recipe application
+
+"One of the ways Scala is a scalable language is that the same constructs are used for structures both small and large."
+
+#### 29.3 Abstraction
+
+#### 29.4 Splitting modules into traits
+
+#### 29.5 Runtime linking
+
+#### 29.6 Tracking module instances
+
+#### 29.7 Conclusion
+
+"In addition to simple static modules, this approach gives you a variety of ways to create abstract, reconfigurable modules."
+
+### 30 Object Equality
+
+#### 30.1 Equality in Scala
+
+"When programming in Java, a common pitfall for beginners is to compare objects with == when they should be compared with equals."
+
+"For value types, == is value comparison, just like in Java."
+
+"For reference types, == is the same as equals in Scala."
+
+#### 30.2 Writing an equality method
+
+Pitfall #1: Defining equals with the wrong signature
+
+Pitfall #2: Changing equals without also changing hashCode
+
+Pitfall #3: Defining equals in terms of mutable fields
+
+Pitfall #4: Failing to define equals as an equivalence relation
+
+#### 30.3 Defining equality for parameterized types
+
+Recipe for equals
+
+Recipe for hashCode
+
+#### 30.5 Conclusion
+
+### 31 Combining Scala and Java
+
+General rules
+
+"Scala is implemented as a translation to standard Java bytecodes."
+
+Value types
+
+Singleton objects
+
+Traits as interfaces
+
+#### 31.2 Annotations
+
+Additional effects from standard annotations
+
+Deprecation
+
+Volatile fields
+
+Serialization
+
+Exceptions thrown
+
+Java annotations
+
+Writing your own annotations
+
+#### 31.3 Wildcard types
+
+#### 31.4 Compiling Scala and Java together
+
+"To support such builds, Scala allows compiling against Java source code as well as Java class files."
+
+#### 31.5 Java 8 integration in Scala 2.12
+
+Lambda expressions and “SAM” types
+
+"From the Scala programmer's perspective, the most visible Java 8-related enhancement in Scala 2.12 is that Scala function literals can be used like Java 8 lambda expressions as a more concise form for anonymous class instance expressions."
+
+Using Java 8 Streams from Scala 2.12
+
+#### 31.6 Conclusion
+
+### 32 Futures and Concurrency
+
+"Scala's standard library offers an alternative that avoids these difficulties by focusing on asynchronous transformations of immutable state: the Future."
+
+#### 32.1 Trouble in paradise
+
+"The problem is that at each point in the program, you must reason about what data you are modifying or accessing that might be modified or accessed by other threads, and what locks are being held."
+
+"Moreover, you can't solve the problem by over-synchronizing either."
+
+"It can be just as problematic to synchronize everything as it is to synchronize nothing."
+
+"A correct lock-using program must have neither race conditions nor deadlocks, so you cannot play it safe by overdoing it in either direction."
+
+#### 32.2 Asynchronous execution and Trys
+
+"Although not a silver bullet, Scala's Future offers one way to deal with concurrency that can reduce, and often eliminate, the need to reason about shared data and locks."
+
+#### 32.3 Working with Futures
+
+Transforming Futures with map
+
+Transforming Futures with for expressions
+
+Creating the Future: Future.failed, Future.successful, Future.fromTry, and Promises
+
+Filtering: filter and collect
+
+Dealing with failure: failed, fallBackTo, recover, and recoverWith
+
+Mapping both possibilities: transform
+
+Combining futures: zip, Future.fold, Future.reduce, Future.sequence, and Future.traverse
+
+Performing side-effects: foreach, onComplete, and andThen
+
+Other methods added in 2.12: flatten, zipWith, and transformWith
+
+#### 32.4 Testing with Futures
+
+"The async testing use case illustrates a general principle for working with futures: Once in a “future space,” try to stay in future space."
+
+"Don't block on a future then continue the computation with the result."
+
+"Stay asynchronous by performing a series of transformations, each of which returns a new future to transform."
+
+#### 32.5 Conclusion
+
+### 33 Combinator Parsing
+
